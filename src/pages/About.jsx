@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./About.css";
-import swiggylogo from '../assets/logo.png'
+import swiggylogo from '../assets/Logo.png'
 import { Link } from 'react-router-dom'
 
 function About() {

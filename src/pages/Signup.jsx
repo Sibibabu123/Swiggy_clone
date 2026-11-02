@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./signup.css";
+import "./Signup.css";
 
 function Signup({ closeSignup }) {
 return ( <div className="signup-overlay" onClick={closeSignup}>

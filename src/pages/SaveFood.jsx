@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./SaveFood.css";
-import swiggylogo from "../assets/logo.png";
+import swiggylogo from "../assets/Logo.png";
 import biryaniImg from "../assets/Biryani.png";
-import pizzaImg from "../assets/pizza.png";
+import pizzaImg from "../assets/Pizza.png";
 import mealsImg from "../assets/EnteMeal.png";
 import pothichorImg from "../assets/Pothichor.png";
 import cakeImg from "../assets/cake.png";

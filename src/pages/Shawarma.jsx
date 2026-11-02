@@ -1,6 +1,6 @@
 import React from "react";
 import "./Shawarma.css";
-import swiggy from "../assets/swiggy.png";        
+import swiggy from "../assets/Swiggy.png";        
 import Shawarma_1 from "../assets/Shawarma_1.png";  
 import Shawarma_2 from "../assets/Shawarma_2.png";
 import Shawarma_3 from "../assets/Shawarma_3.png";
