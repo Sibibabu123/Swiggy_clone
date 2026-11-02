@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import "./Login.css";
+import logimage from '../assets/logimage.png'
 
 
 
@@ -15,6 +16,9 @@ function Login() {
                 <Link to='/'> <button className="login-close-btn">
                     ×
                 </button></Link>
+                <div className="login-image">
+                            <img src={logimage} alt="login" />
+                          </div>
                
 
            

@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Signup.css";
+import logimage from'../assets/logimage.png';
 
 function Signup({ closeSignup }) {
 
@@ -29,7 +30,7 @@ function Signup({ closeSignup }) {
           </p>
 
           <div className="signup-image">
-            <img src="/signup.png" alt="Signup" />
+            <img src={logimage} alt="Signup" />
           </div>
 
           <form>

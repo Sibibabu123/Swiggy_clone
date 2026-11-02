@@ -63,7 +63,7 @@
 
 
 .login-subtitle {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 40px;
 }
 
@@ -77,6 +77,19 @@
 .login-form {
   margin-top: 50px;
 }
+.login-image{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.login-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+
 
 
 .login-form input {
