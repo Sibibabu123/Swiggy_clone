@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Foodcategories.css";
 
 import Pottichur from "../assets/Pothichor.png";
-import Biriyani from "../assets/Biryani.png";
+import Biriyani from "../assets/Biriyani.png";
 import SouthIndian from "../assets/SouthIndian.png";
 import Cake from "../assets/Cake.png";
 import Burger from "../assets/Burger.png";

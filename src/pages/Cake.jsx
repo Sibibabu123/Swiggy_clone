@@ -175,7 +175,7 @@ function Shawarma() {
 
       <main className="shawarma-container">
 
-        <h1>Shawarma</h1>
+        <h1>Cake</h1>
 
         <p className="shawarma-description">
           Order in deliciously juicy and grilled Shawarmas to curb your cravings!

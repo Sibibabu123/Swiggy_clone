@@ -1,112 +1,157 @@
+
+/* Background overlay */
+
 .signup-overlay {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.55);
-backdrop-filter: blur(5px);
-z-index: 9999;
-display: flex;
-justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: flex-end;
+
+  animation: fadeIn 0.3s ease;
 }
+
+/* Signup sidebar */
 
 .signup-sidebar {
-width: 450px;
-max-width: 90%;
-height: 100%;
-background: white;
-position: relative;
-overflow-y: auto;
-animation: slideIn 0.4s ease;
+  width: 450px;
+  max-width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+  overflow-y: auto;
+
+  animation: slideFromRight 0.4s ease forwards;
 }
 
-@keyframes slideIn {
-from {
-transform: translateX(100%);
-}
-
-to {
-transform: translateX(0);
-}
-}
+/* Close button */
 
 .close-btn {
-position: absolute;
-top: 20px;
-left: 25px;
-border: none;
-background: transparent;
-font-size: 35px;
-cursor: pointer;
-color: #555;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+
+  border: none;
+  background: transparent;
+  font-size: 35px;
+  cursor: pointer;
+  color: #282c3f;
 }
 
+/* Content */
+
 .signup-content {
-width: 80%;
-margin: 100px auto 30px;
+  width: 80%;
+  margin: 100px auto 40px;
 }
 
 .signup-content h2 {
-font-size: 30px;
-font-weight: 700;
-margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #282c3f;
+  margin-bottom: 10px;
 }
 
 .signup-content p {
-color: #686b78;
-font-size: 14px;
-margin-bottom: 35px;
+  font-size: 14px;
+  color: #686b78;
 }
 
-.signup-content a {
-color: #ff5200;
-text-decoration: none;
+.signup-content p a {
+  color: #ff5200;
+  text-decoration: none;
+  font-weight: 600;
 }
+
+/* Image */
 
 .signup-image {
-margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
 
 .signup-image img {
-width: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Form */
+
+.signup-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .signup-content input {
-width: 100%;
-height: 55px;
-padding: 15px;
-margin-bottom: 15px;
-border: 1px solid #d4d5d9;
-box-sizing: border-box;
-outline: none;
-font-size: 15px;
+  width: 100%;
+  height: 55px;
+  padding: 15px;
+  border: 1px solid #d4d5d9;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 .signup-content input:focus {
-border-color: #ff5200;
+  border-color: #ff5200;
 }
+
+/* Continue button */
 
 .continue-btn {
-width: 100%;
-height: 50px;
-background: #ff5200;
-color: white;
-border: none;
-font-weight: bold;
-cursor: pointer;
-margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
+.continue-btn:hover {
+  background: #333;
+}
+
+/* Terms */
 
 .signup-content small {
-font-size: 11px;
-color: #686b78;
-line-height: 1.5;
+  display: block;
+  margin-top: 20px;
+  color: #686b78;
+  font-size: 11px;
+  line-height: 1.6;
 }
 
-@media (max-width: 500px) {
-.signup-sidebar {
-width: 100%;
-max-width: 100%;
+/* Animations */
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

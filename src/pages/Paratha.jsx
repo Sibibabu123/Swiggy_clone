@@ -1,21 +1,18 @@
 import React from "react";
 import "./Shawarma.css";
 import swiggy from "../assets/Swiggy.png";        
-import Shawarma_1 from "../assets/Shawarma_1.png";  
-import Shawarma_2 from "../assets/Shawarma_2.png";
-import Shawarma_3 from "../assets/Shawarma_3.png";
-import Shawarma_4 from "../assets/Shawarma_4.png";
-import Shawarma_5 from "../assets/Shawarma_5.png";
-import Shawarma_6 from "../assets/Shawarma_6.png";
-import Shawarma_7 from "../assets/Shawarma_7.png";
-import Shawarma_8 from "../assets/Shawarma_8.png";
+import paratha1 from "../assets/paratha1.png";  
+import paratha2 from"../assets/paratha2.png";
+import paratha3 from "../assets/paratha3.png";
+import paratha4 from "../assets/paratha4.png";
+import paratha5 from "../assets/paratha5.png";
 
 
 const restaurants = [
   {
     id: 1,
-    name: "Shawarma Plus",
-    image: Shawarma_1,
+    name: "urban paratha",
+    image: paratha1,
     rating: "4.4",
     time: "25–30 mins",
     food: "Lebanese, Beverages",
@@ -23,8 +20,8 @@ const restaurants = [
   },
   {
     id: 2,
-    name: "Bektash",
-    image: Shawarma_2,
+    name: "green spoon pure veg",
+    image: paratha2,
     rating: "4.3",
     time: "50–60 mins",
     food: "Turkish, Arabian, American, Beverages",
@@ -32,8 +29,8 @@ const restaurants = [
   },
   {
     id: 3,
-    name: "Real Arabi",
-    image: Shawarma_3,
+    name: "Hotel malabar",
+    image: paratha3,
     rating: "4.1",
     time: "30–35 mins",
     food: "Arabian, Chinese",
@@ -41,8 +38,8 @@ const restaurants = [
   },
   {
     id: 4,
-    name: "Charcoal Shack",
-    image: Shawarma_4,
+    name: "wok stories",
+    image: paratha4,
     rating: "4.6",
     time: "40–45 mins",
     food: "Chinese, Arabian, Indian, Ice Cream",
@@ -50,8 +47,8 @@ const restaurants = [
   },
   {
     id: 5,
-    name: "Arabian Grill",
-    image: Shawarma_5,
+    name: "urbsn paratha",
+    image: paratha1,
     rating: "4.2",
     time: "30–40 mins",
     food: "Arabian, Fast Food",
@@ -59,8 +56,8 @@ const restaurants = [
   },
   {
     id: 6,
-    name: "Shawarma Corner",
-    image: Shawarma_6,
+    name: "green spoon pure veg",
+    image: paratha1,
     rating: "4.3",
     time: "35–40 mins",
     food: "Arabian, Beverages",
@@ -69,7 +66,7 @@ const restaurants = [
   {
     id: 7,
     name: "Food Palace",
-    image: Shawarma_7,
+    image: paratha2,
     rating: "4.5",
     time: "25–35 mins",
     food: "Indian, Arabian",
@@ -78,7 +75,7 @@ const restaurants = [
   {
     id: 8,
     name: "Rolls & More",
-    image: Shawarma_8,
+    image: paratha5,
     rating: "4.1",
     time: "30–40 mins",
     food: "Fast Food, Arabian",

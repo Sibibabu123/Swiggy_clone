@@ -1,27 +1,28 @@
 
 import React, { useState } from "react";
 import "./Cities.css";
+import { Link } from "react-router-dom";
 
 function Cities() {
   const [showMore, setShowMore] = useState(false);
 
   const cities = [
-    "Bangalore",
-    "Gurgaon",
-    "Hyderabad",
-    "Delhi",
-    "Mumbai",
-    "Pune",
-    "Kolkata",
-    "Chennai",
-    "Ahmedabad",
-    "Chandigarh",
-    "Jaipur",
-    "Kochi",
-    "Coimbatore",
-    "Thiruvananthapuram",
-    "Lucknow",
-    "Indore",
+    <Link to="https://www.swiggy.com/city/bangalore">Bangalore</Link>,
+    <Link to="https://www.swiggy.com/city/gurgaon">Gurgaon</Link>,
+    <Link to="https://www.swiggy.com/city/hyderabad">Hyderabad</Link>,
+    <Link to="https://www.swiggy.com/city/delhi">Delhi</Link>,
+    <Link to="https://www.swiggy.com/city/mumbai">Mumbai</Link>,
+    <Link to="https://www.swiggy.com/city/pune">Pune</Link>,
+    <Link to="https://www.swiggy.com/city/kolkata">Kolkata</Link>,
+    <Link to="https://www.swiggy.com/city/chennai"> Chennai</Link>,
+    <Link to="https://www.swiggy.com/city/ahmedabad"> Ahmedabad</Link>,
+    <Link to="https://www.swiggy.com/city/chandigarh">Chandigarh</Link>,
+    <Link to="https://www.swiggy.com/city/jaipur">Jaipur</Link>,
+    <Link to="https://www.swiggy.com/city/kochi"> Kochi</Link>,
+    <Link to="https://www.swiggy.com/city/coimbatore">Coimbatore</Link>,
+    <Link to="https://www.swiggy.com/city/thiruvananthapuram/order-online"> Thiruvananthapuram,</Link>,
+    <Link to="https://www.swiggy.com/city/lucknow">Lucknow</Link>,
+    <Link to="https://www.swiggy.com/city/nagpur">Nagpur</Link>
   ];
 
   const visibleCities = showMore ? cities : cities.slice(0, 11);

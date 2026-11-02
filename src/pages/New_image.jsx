@@ -6,7 +6,7 @@ function Image(){
         <div>
             <section className='image_get'>
             <div>
-     <img src={New_image} alt="" width='100%' height='100%'/>
+     <img src={New_image} alt="" width='80%' height='100%'style={{marginLeft:'10%'}}/>
      </div>
       </section>
         </div>

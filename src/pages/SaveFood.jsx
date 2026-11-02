@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./SaveFood.css";
 import swiggylogo from "../assets/Logo.png";
-import biryaniImg from "../assets/Biryani.png";
+import Biriyani from "../assets/Biriyani.png";
 import pizzaImg from "../assets/Pizza.png";
 import mealsImg from "../assets/EnteMeal.png";
 import pothichorImg from "../assets/Pothichor.png";
@@ -18,7 +18,7 @@ const INITIAL_SURPLUS_ITEMS = [
     restaurant: "ABC Restaurant",
     rating: "4.4",
     category: "Biryani",
-    image: biryaniImg,
+    image: Biriyani,
     originalPrice: 180,
     offerPrice: 120,
     quantity: 5,

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./SaveFoodSection.css";
 
-import biryaniImg from "../assets/Biryani.png";
+import Biriyani from "../assets/Biriyani.png";
 import pizzaImg from "../assets/Pizza.png";
 import mealsImg from "../assets/EnteMeal.png";
 import cakeImg from "../assets/Cake.png";
@@ -13,7 +13,7 @@ const HOME_SURPLUS_ITEMS = [
     name: "Freshly prepared Chicken Biryani",
     restaurant: "ABC Restaurant",
     rating: "4.4",
-    image: biryaniImg,
+    image: Biriyani,
     originalPrice: 180,
     offerPrice: 120,
     quantity: 5,

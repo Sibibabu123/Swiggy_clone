@@ -1,21 +1,16 @@
 import React from "react";
 import "./Shawarma.css";
 import swiggy from "../assets/Swiggy.png";        
-import Shawarma_1 from "../assets/Shawarma_1.png";  
-import Shawarma_2 from "../assets/Shawarma_2.png";
-import Shawarma_3 from "../assets/Shawarma_3.png";
-import Shawarma_4 from "../assets/Shawarma_4.png";
-import Shawarma_5 from "../assets/Shawarma_5.png";
-import Shawarma_6 from "../assets/Shawarma_6.png";
-import Shawarma_7 from "../assets/Shawarma_7.png";
-import Shawarma_8 from "../assets/Shawarma_8.png";
+import Pizza1 from "../assets/Pizza1.png";  
+import Pizza2 from "../assets/Pizza2.png";
+import Pizza3 from "../assets/Pizza3.png";
 
 
 const restaurants = [
   {
     id: 1,
-    name: "Shawarma Plus",
-    image: Shawarma_1,
+    name: "Domino's Pizza",
+    image: Pizza1,
     rating: "4.4",
     time: "25–30 mins",
     food: "Lebanese, Beverages",
@@ -23,8 +18,8 @@ const restaurants = [
   },
   {
     id: 2,
-    name: "Bektash",
-    image: Shawarma_2,
+    name: "Bentoz pizza",
+    image: Pizza2,
     rating: "4.3",
     time: "50–60 mins",
     food: "Turkish, Arabian, American, Beverages",
@@ -32,58 +27,14 @@ const restaurants = [
   },
   {
     id: 3,
-    name: "Real Arabi",
-    image: Shawarma_3,
+    name: "Edam Art Cafe",
+    image: Pizza3,
     rating: "4.1",
     time: "30–35 mins",
     food: "Arabian, Chinese",
     location: "Ravipuram",
   },
-  {
-    id: 4,
-    name: "Charcoal Shack",
-    image: Shawarma_4,
-    rating: "4.6",
-    time: "40–45 mins",
-    food: "Chinese, Arabian, Indian, Ice Cream",
-    location: "Panampilly Nagar",
-  },
-  {
-    id: 5,
-    name: "Arabian Grill",
-    image: Shawarma_5,
-    rating: "4.2",
-    time: "30–40 mins",
-    food: "Arabian, Fast Food",
-    location: "Kochi",
-  },
-  {
-    id: 6,
-    name: "Shawarma Corner",
-    image: Shawarma_6,
-    rating: "4.3",
-    time: "35–40 mins",
-    food: "Arabian, Beverages",
-    location: "Ernakulam",
-  },
-  {
-    id: 7,
-    name: "Food Palace",
-    image: Shawarma_7,
-    rating: "4.5",
-    time: "25–35 mins",
-    food: "Indian, Arabian",
-    location: "Kochi",
-  },
-  {
-    id: 8,
-    name: "Rolls & More",
-    image: Shawarma_8,
-    rating: "4.1",
-    time: "30–40 mins",
-    food: "Fast Food, Arabian",
-    location: "Kochi",
-  },
+  
 ];
 
 function Shawarma() {
@@ -146,10 +97,10 @@ function Shawarma() {
 
       <main className="shawarma-container">
 
-        <h1>Shawarma</h1>
+        <h1>Pizza</h1>
 
         <p className="shawarma-description">
-          Order in deliciously juicy and grilled Shawarmas to curb your cravings!
+    Order in deliciously juicy and grilled Shawarmas to curb your cravings!
         </p>
 
 

@@ -43,7 +43,7 @@ function App() {
         <Route path="/New_image" element={<New_image />} />
         <Route path="/Pothichor" element={<Pothichor />} />
         <Route path="/Shawarma" element={<Shawarma />} />
-        {/* <Route path="/biriyani" element={<Biriyani />} /> */}
+        <Route path="/Biriyani" element={<Biriyani />} />
         <Route path="/Burger" element={<Burger/>} />
         <Route path="/Pizza" element={<Pizza />} />
         {/* <Route path="/south-indian" element={<SouthIndianPage />} /> */}

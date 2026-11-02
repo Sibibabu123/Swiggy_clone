@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import swiggylogo from "../assets/Logo.png";
+import swiggy from "../assets/swiggy.png";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-top-container">
        <div className="footer-brand-section">
           <Link to="/" className="footer-logo-wrapper">
-            <img src={swiggylogo} alt="Swiggy" className="footer-swiggy-logo" />
+            <img src={swiggy} alt="" className="footer-swiggy-logo" />
           </Link>
           <p className="footer-copyright">© 2026 Swiggy Limited</p>
         </div><div className="footer-links-col">
