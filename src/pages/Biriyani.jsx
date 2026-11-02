@@ -1,5 +1,5 @@
 import React from "react";
-import FoodCategories from "../FoodCategories.jsx";
+import FoodCategories from "./Foodcategories.jsx";
 import BiryaniImage from "../assets/Biryani.png";
 import ShalimarBiriyani from "../assets/Shalimar Biriyani.png";
 import EmpirePlaza from "../assets/Empire_plaza.png";

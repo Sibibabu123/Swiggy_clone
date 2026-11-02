@@ -199,8 +199,9 @@ background-color: white;
   gap: 14px;
 
   width: 100%;
+  margin-left: 80px;
   max-width: 850px;
-  margin-top: -200px;
+  margin-top: -300px;
   /* margin: 25px auto; */
   padding: 4px 0 16px;
 }
@@ -290,14 +291,14 @@ background-color: white;
   max-width: 100%;
   height: auto;
   margin-left: -1250px;
-  margin-top: -200px;
+  margin-top: -250px;
 }
 
 .veg_bck_2 {
   max-width: 100%;
   height: auto;
-  margin-left: 500px;
-  margin-top: -250px;
+  margin-left: 501px;
+  margin-top: -150px;
 }
 
 .homeimage {
@@ -310,7 +311,8 @@ background-color: white;
   width: 100%;
   max-width: 1300px;
 
-  margin: 30px auto;
+ margin-left: 100px;
+ margin-top: -200px;
   padding: 0 20px;
 }
 
@@ -324,7 +326,7 @@ background-color: white;
   display: block;
 
   width: 100%;
-  height: 320px;
+  height: 450px;
 
   object-fit: contain;
 

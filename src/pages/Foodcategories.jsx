@@ -4,9 +4,8 @@ import "./Foodcategories.css";
 
 import Pottichur from "../assets/Pothichor.png";
 import Biriyani from "../assets/Biryani.png";
-import SouthIndian from "../assets/South Indian.png";
+import SouthIndian from "../assets/SouthIndian.png";
 import Cake from "../assets/Cake.png";
-import NorthIndian from "../assets/North Indian.png";
 import Burger from "../assets/Burger.png";
 import Pizza from "../assets/Pizza.png";
 import Desserts from "../assets/Desserts.png";
@@ -29,25 +28,25 @@ function Foodcategories() {
   const scrollRef = useRef(null);
 const categories = [
     { name: "", image: Pottichur, path: "/Pothichor" },
-    { name: "", image: Desserts, path: "/desserts" },
-    { name: "", image: Biriyani, path: "/biriyani" },
-    { name: "", image: Chinese, path: "/chinese" },
-    { name: "", image: SouthIndian, path: "/south-indian" },
-    { name: "", image: Paratha, path: "/north-indian" },
-    { name: "", image: Cake, path: "/desserts" },
+    { name: "", image: Desserts, path: "/Desserts" },
+    { name: "", image: Biriyani, path: "/Biriyani" },
+    { name: "", image: Chinese, path: "/Chinese" },
+    { name: "", image: SouthIndian, path: "/SouthIndian" },
+    { name: "", image: Paratha, path: "/Paratha" },
+    { name: "", image: Cake, path: "/Cake" },
     { name: "", image: Rolls, path: "/Shawarma" },
-    { name: "", image: NorthIndian, path: "/north-indian" },
+
     { name: "", image: Parotta, path: "/Pothichor" },
-    { name: "", image: Burger, path: "/burger" },
-    { name: "", image: Salad, path: "/south-indian" },
-    { name: "", image: Pizza, path: "/pizza" },
+    { name: "", image: Burger, path: "/Burger" },
+    { name: "", image: Salad, path: "/Salad" },
+    { name: "", image: Pizza, path: "/Pizza" },
     { name: "", image: IceCream, path: "/desserts" },
     { name: "", image: Shawarma, path: "/Shawarma" },
-    { name: "", image: Dosa, path: "/dosa" },
+    { name: "", image: Dosa, path: "/Dosa" },
     { name: "", image: Chinese, path: "/chinese" },
     { name: "", image: Pasta, path: "/pizza" },
     { name: "", image: Juice, path: "/desserts" },
-    { name: "", image: Vada, path: "/south-indian" },
+    { name: "", image: Vada, path: "/Vada" },
     { name: "", image: Momo, path: "/chinese" },
     { name: "", image: Idli, path: "/south-indian" },
     { name: "", image: Appam, path: "/south-indian" },
