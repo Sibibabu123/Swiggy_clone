@@ -1,0 +1,499 @@
+
+
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #202124;
+  overflow: hidden;
+}
+
+
+.about-navbar {
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+/* Swiggy logo */
+
+.about-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff5200;
+  color: white;
+  border-radius: 13px;
+  font-size: 29px;
+  font-weight: 900;
+}
+
+.logo-text {
+  color: #ff5200;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* Navigation links */
+
+.about-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.about-nav-links a {
+  text-decoration: none;
+  color: #414146;
+  font-size: 17px;
+  font-weight: 600;
+  white-space: nowrap;
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.about-nav-links a:hover,
+.about-nav-links a.active {
+  color: #ff5200;
+}
+
+.about-nav-links a.active::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: #ff5200;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-nav-links a span {
+  margin-left: 5px;
+}
+
+/* Hero section */
+
+.about-hero {
+  min-height: 640px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #fdfbff 0%,
+    #f5f3fa 48%,
+    #e9eaf4 100%
+  );
+}
+
+/* About heading */
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 100px 30px 0;
+}
+
+.about-content h1 {
+  color: #080b15;
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+
+.about-content p {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #92929a;
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Map background */
+
+.map-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 250px;
+  bottom: 0;
+  overflow: hidden;
+
+  /* Light map-like background */
+  background:
+    linear-gradient(
+      20deg,
+      transparent 48%,
+      rgba(255, 255, 255, 0.45) 49%,
+      rgba(255, 255, 255, 0.45) 50%,
+      transparent 51%
+    ),
+    linear-gradient(
+      105deg,
+      transparent 47%,
+      rgba(255, 255, 255, 0.4) 48%,
+      rgba(255, 255, 255, 0.4) 49%,
+      transparent 50%
+    ),
+    linear-gradient(180deg, #f1f0f8, #e7e9f3);
+}
+
+/* Decorative curves */
+
+.map-curve {
+  position: absolute;
+  border: 2px solid rgba(213, 201, 249, 0.45);
+  pointer-events: none;
+}
+
+.curve-one {
+  width: 600px;
+  height: 250px;
+  left: -170px;
+  top: -120px;
+  border-color: rgba(213, 201, 249, 0.4);
+  border-radius: 50%;
+  transform: rotate(-15deg);
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.curve-two {
+  width: 500px;
+  height: 240px;
+  right: -180px;
+  top: 70px;
+  border-radius: 50%;
+  transform: rotate(15deg);
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+/* Map markers */
+
+.map-marker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Circular icon */
+
+.marker-circle {
+  width: 82px;
+  height: 82px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #fff0e8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marker-circle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: -17px;
+  transform: translateX(-50%);
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 15px solid #ffffff;
+}
+
+.marker-emoji {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.marker-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ff5200;
+  margin-top: 15px;
+}
+
+.map-marker h3 {
+  font-size: 20px;
+  color: #414146;
+  margin: 5px 0 0;
+  font-weight: 700;
+}
+
+/* Food marker position */
+
+.food-marker {
+  left: 36.5%;
+  top: 25px;
+}
+
+/* Instamart marker position */
+
+.instamart-marker {
+  left: 59.5%;
+  top: 25px;
+}
+
+/* Bottom markers */
+
+.bottom-left-marker {
+  left: 16%;
+  top: 235px;
+}
+
+.bottom-right-marker {
+  right: 16%;
+  top: 235px;
+}
+
+/* Central Swiggy icon */
+
+.central-swiggy-logo {
+  position: absolute;
+  left: 50%;
+  top: 225px;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 96px;
+  border-radius: 27px;
+  background: #ff5200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(255, 82, 0, 0.12);
+}
+
+.central-swiggy-logo span {
+  font-size: 55px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+  .about-navbar {
+    flex-wrap: wrap;
+  }
+
+  .about-nav-links {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+
+  .about-nav-links a {
+    font-size: 15px;
+  }
+
+  .about-content {
+    padding-top: 80px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-navbar {
+    padding: 12px 15px;
+    gap: 15px;
+  }
+
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .about-nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 20px;
+  }
+
+  .about-nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-nav-links a {
+    font-size: 14px;
+  }
+
+  .about-hero {
+    min-height: 650px;
+  }
+
+  .about-content {
+    padding: 65px 20px 0;
+  }
+
+  .about-content h1 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .map-background {
+    top: 285px;
+  }
+
+  .food-marker {
+    left: 20%;
+    top: 35px;
+  }
+
+  .instamart-marker {
+    left: 61%;
+    top: 35px;
+  }
+
+  .marker-circle {
+    width: 68px;
+    height: 68px;
+    border-width: 6px;
+  }
+
+  .marker-emoji {
+    font-size: 27px;
+  }
+
+  .map-marker h3 {
+    font-size: 16px;
+  }
+
+  .bottom-left-marker {
+    left: 8%;
+    top: 240px;
+  }
+
+  .bottom-right-marker {
+    right: 8%;
+    top: 240px;
+  }
+
+  .central-swiggy-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 22px;
+    top: 235px;
+  }
+
+  .central-swiggy-logo span {
+    font-size: 43px;
+  }
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #ffe0d1;
+}
+.image_logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.image_logo img {
+  width: 180px;
+  height: auto;
+  color: #ff5200;
+  object-fit: contain;
+  display: block;
+}
+
+
+@media (max-width: 1024px) {
+  .about-navbar {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .about-nav-links {
+    width: 100%;
+    order: 3;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 6px;
+  }
+
+  .about-nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-nav-links a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 24px 16px;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .image_logo img {
+    width: 120px;
+  }
+}

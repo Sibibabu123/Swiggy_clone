@@ -1,0 +1,158 @@
+
+.cities-section {
+  width: 100%;
+ 
+  min-height: auto;
+  margin: 0 auto;
+  padding: 35px 24px 50px;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Heading */
+.cities-section h2 {
+  font-size: 24px;
+  font-weight: 750;
+  color: #202127;
+  margin: 0 0 16px;
+}
+
+/* Four-column layout */
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+/* City buttons */
+.city-button {
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 12px;
+
+  color: #414146;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.city-button:hover {
+  border-color: #b5b5b5;
+  background: #fafafa;
+}
+
+/* Show More */
+.show-more-button {
+  gap: 12px;
+  color: #ff5200;
+  font-weight: 700;
+}
+
+/* Arrow */
+.arrow-down,
+.arrow-up {
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid #ff5200;
+  border-bottom: 2px solid #ff5200;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+.arrow-up {
+  transform: rotate(225deg);
+  margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+  .cities-section {
+    padding: 30px 20px;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .city-button {
+    font-size: 13px;
+    height: 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cities-section {
+    padding: 24px 16px 36px;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .cities-section h2 {
+    font-size: 21px;
+  }
+
+  .city-button {
+    height: 48px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cities-section {
+    padding: 20px 14px 30px;
+  }
+
+  .cities-section h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .city-button {
+    height: 46px;
+    font-size: 12px;
+    padding: 0 8px;
+    border-radius: 10px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .cities-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

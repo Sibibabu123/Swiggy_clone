@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.shawarma-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #02060c;
+}
+
+
+/* NAVBAR */
+
+.shawarma-navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 calc((100% - 1235px) / 2);
+  background: #ffffff;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.swiggy-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.orange-arrow {
+  color: #fc5200;
+  font-size: 24px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-item span {
+  font-size: 23px;
+}
+
+.offers-item {
+  position: relative;
+}
+
+.offers-item sup {
+  position: absolute;
+  top: -12px;
+  right: -25px;
+  color: #fc5200;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+
+/* MAIN CONTAINER */
+
+.shawarma-container {
+  max-width: 1235px;
+  width: 100%;
+  margin: auto;
+  padding-top: 24px;
+}
+
+
+/* HEADING */
+
+.shawarma-container h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.shawarma-description {
+  font-size: 17px;
+  color: #282c3f;
+  margin-bottom: 27px;
+}
+
+
+/* FILTER BUTTONS */
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-section button {
+  height: 37px;
+  padding: 0 14px;
+  border-radius: 25px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #282c3f;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-section button:hover {
+  background: #f5f5f5;
+}
+
+
+/* RESTAURANT HEADING */
+
+.restaurant-heading {
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 31px;
+  letter-spacing: -0.5px;
+}
+
+
+/* RESTAURANT GRID */
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+  row-gap: 20px;
+  padding-bottom: 40px;
+}
+
+
+/* RESTAURANT CARD */
+
+.restaurant-card {
+  width: 100%;
+  min-width: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(0.98);
+}
+
+
+/* RESTAURANT IMAGE */
+
+.restaurant-image {
+  width: 100%;
+  height: 188px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* RESTAURANT DETAILS */
+
+.restaurant-details {
+  padding: 10px 12px 0;
+}
+
+.restaurant-details h3 {
+  font-size: 16px;
+  font-weight: 750;
+  margin-bottom: 3px;
+}
+
+.rating-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.rating-star {
+  background: #159447;
+  color: white;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.restaurant-details p {
+  font-size: 14px;
+  color: #686b78;
+  line-height: 23px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1250px) {
+
+  .shawarma-container {
+    width: 92%;
+  }
+
+  .shawarma-navbar {
+    padding: 0 4%;
+  }
+
+  .nav-right {
+    gap: 25px;
+  }
+
+  .restaurant-grid {
+    gap: 25px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .nav-right {
+    gap: 15px;
+  }
+
+  .nav-item {
+    font-size: 12px;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .shawarma-navbar {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .nav-left {
+    gap: 15px;
+  }
+
+  .nav-right {
+    gap: 12px;
+  }
+
+  .nav-item {
+    font-size: 0;
+  }
+
+  .nav-item span {
+    font-size: 21px;
+  }
+
+  .offers-item sup {
+    display: none;
+  }
+
+  .shawarma-container {
+    width: 92%;
+    padding-top: 20px;
+  }
+
+  .shawarma-container h1 {
+    font-size: 30px;
+  }
+
+  .shawarma-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .filter-section {
+    gap: 8px;
+  }
+
+  .filter-section button {
+    font-size: 11px;
+    height: 34px;
+    padding: 0 10px;
+  }
+
+  .restaurant-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
+  }
+
+  .restaurant-image {
+    height: 145px;
+    border-radius: 12px;
+  }
+
+  .restaurant-details {
+    padding: 8px 5px;
+  }
+
+  .restaurant-details h3 {
+    font-size: 14px;
+  }
+
+  .restaurant-details p {
+    font-size: 12px;
+  }
+
+  .rating-time {
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 380px) {
+
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-image {
+    height: 190px;
+  }
+
+}

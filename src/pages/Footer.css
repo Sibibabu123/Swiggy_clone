@@ -1,0 +1,275 @@
+/* Swiggy Pixel-Perfect Footer Styles matching user screenshot */
+
+.swiggy-footer {
+  width: 100%;
+  background-color: #f0f0f5;
+  font-family: 'Basis Grotesque Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #02060c;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Upper 5-column content area */
+.footer-top-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 48px 24px 40px 24px;
+  display: grid;
+  grid-template-columns: 220px 170px 170px 170px 1fr;
+  column-gap: 24px;
+  row-gap: 32px;
+  box-sizing: border-box;
+}
+
+/* Brand Section */
+.footer-brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo-wrapper {
+  display: inline-block;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footer-swiggy-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #686b78;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+
+/* Columns */
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #02060c;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.2px;
+}
+
+.footer-links-col a {
+  display: block;
+  font-size: 14px;
+  color: #686b78;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-weight: 450;
+  transition: color 0.15s ease;
+  line-height: 1.35;
+}
+
+.footer-links-col a:hover {
+  color: #fc5200;
+}
+
+.footer-legal-group {
+  margin-top: 24px;
+}
+
+.footer-legal-group .footer-col-title {
+  margin-bottom: 12px;
+}
+
+/* Cities button with dropdown pill */
+.footer-cities-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #dcdce0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  color: #686b78;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 4px;
+  transition: all 0.2s ease;
+}
+
+.footer-cities-btn:hover {
+  border-color: #02060c;
+  color: #02060c;
+  background-color: #ffffff;
+}
+
+.chevron-down {
+  font-size: 14px;
+  color: #686b78;
+}
+
+/* Social Icons */
+.footer-social-group {
+  margin-top: 36px;
+}
+
+.footer-social-group .footer-col-title {
+  margin-bottom: 14px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #414449;
+  text-decoration: none;
+  margin-bottom: 0;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #fc5200;
+  transform: translateY(-2px);
+}
+
+/* Thin Divider Line */
+.footer-divider-line {
+  width: 100%;
+  border-bottom: 1px solid #d9d9df;
+}
+
+/* Bottom App Download Bar */
+.footer-bottom-bar {
+  width: 100%;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.footer-bottom-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-heading {
+  font-size: 17px;
+  font-weight: 800;
+  color: #02060c;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+.footer-app-badges {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Download Badges matching exact Swiggy App Store & Play Store black pill buttons */
+.app-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 9px;
+  text-decoration: none;
+  height: 48px;
+  box-sizing: border-box;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.app-badge-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.badge-icon {
+  flex-shrink: 0;
+}
+
+.badge-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.badge-subtitle {
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #e0e0e0;
+}
+
+.badge-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+/* Responsive queries */
+@media (max-width: 1024px) {
+  .footer-top-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 36px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-brand-section {
+    grid-column: span 2;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand-section {
+    grid-column: span 1;
+  }
+
+  .footer-app-badges {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app-badge-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,600 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.home_page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ff5200;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.navbar {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+
+.image_logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.image_logo img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navigation Links */
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.nav_links a:hover {
+  opacity: 0.8;
+}
+
+/* Save Food Button */
+
+.save-food-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 7px;
+
+  background: rgba(255,255,255,0.18);
+  padding: 9px 16px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.45);
+
+  color: white !important;
+  font-weight: 700 !important;
+  transition: 0.3s;
+}
+
+.save-food-link:hover {
+  background: white;
+  color: #1b5e20 !important;
+  transform: translateY(-2px);
+}
+
+.save-leaf {
+  font-size: 16px;
+}
+
+.save-badge {
+  background: #2e7d32;
+  color: white;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+/* Get App Button */
+
+.app-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sign-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sign-btn:hover {
+  background: white;
+  color: #ff5200;
+}
+
+.app-btn:hover {
+  background: white;
+  color: #ff5200;
+}
+
+/* Sign In Button */
+
+.signin-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 120px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.hero_section {
+  width: 100%;
+  max-width: 1050px;
+  margin: 60px auto 0;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.hero_section h1 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 32px;
+  color: white;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: 100%;
+  max-width: 850px;
+  margin-top: -200px;
+  /* margin: 25px auto; */
+  padding: 4px 0 16px;
+}
+
+
+.location-box {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  height: 58px;
+
+  padding: 0 18px;
+
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+}
+
+.location-icon {
+  color: #ff5200;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+.location-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #333;
+
+}
+
+.location-input::placeholder {
+  color: #939393;
+}
+
+.dropdown-icon {
+  font-size: 16px;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Restaurant Search */
+
+.restaurant-search-box {
+  display: flex;
+  align-items: center;
+/* margin-top: -300px; */
+  width: 50%;
+  height: 58px;
+
+  padding: 0 18px;
+
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+}
+
+.restaurant-input {
+  flex: 1;
+  min-width: 0;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #333;
+}
+
+.restaurant-input::placeholder {
+  color: #888;
+}
+
+.search-icon {
+  color: #777;
+  font-size: 18px;
+  margin-left: 12px;
+  cursor: pointer;
+
+}
+
+.veg_bck {
+  max-width: 100%;
+  height: auto;
+  margin-left: -1250px;
+  margin-top: -200px;
+}
+
+.veg_bck_2 {
+  max-width: 100%;
+  height: auto;
+  margin-left: 500px;
+  margin-top: -250px;
+}
+
+.homeimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.homeimage a {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+
+.homeimage img {
+  display: block;
+
+  width: 100%;
+  height: 320px;
+
+  object-fit: contain;
+
+  border-radius: 15px;
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+.homeimage img:hover {
+  transform: translateY(-5px);
+}
+
+/* Individual image classes */
+
+.instamart,
+.dineout,
+.food_delivery {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .navbar {
+    padding: 20px 25px;
+  }
+
+  .nav_links {
+    gap: 14px;
+  }
+
+  .hero_section h1 {
+    font-size: 38px;
+  }
+
+  .homeimage img {
+    height: 280px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .image_logo img {
+    width: 135px;
+  }
+
+  .nav_links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+    padding-bottom: 8px;
+
+    scrollbar-width: none;
+  }
+
+  .nav_links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav_links a {
+    font-size: 13px;
+  }
+
+  .save-food-link {
+    padding: 7px 12px;
+  }
+
+  .app-btn {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .signin-btn {
+    padding: 9px 17px;
+    font-size: 13px;
+  }
+
+  /* Hero */
+
+  .hero_section {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .hero_section h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  /* Search */
+
+  .search-container {
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px auto;
+  }
+
+  .location-box,
+  .restaurant-search-box {
+    width: 100%;
+    height: 54px;
+  }
+
+  /* Promotional Images */
+
+  .homeimage {
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .homeimage img {
+    height: 210px;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .home_page {
+    min-height: 100vh;
+  }
+
+  .navbar {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .image_logo img {
+    width: 110px;
+  }
+
+  .nav_links {
+    gap: 12px;
+  }
+
+  .nav_links a {
+    font-size: 12px;
+  }
+
+  .save-food-link {
+    padding: 6px 9px;
+    font-size: 11px !important;
+    gap: 5px;
+  }
+
+  .save-badge {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+
+  .app-btn {
+    display: none;
+  }
+
+  .signin-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  /* Hero Section */
+
+  .hero_section {
+    margin-top: 30px;
+    padding: 0 14px;
+  }
+
+  .hero_section h1 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 22px;
+  }
+
+  /* Search Boxes */
+
+  .search-container {
+    width: 100%;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .location-box,
+  .restaurant-search-box {
+    width: 100%;
+    height: 49px;
+    padding: 0 13px;
+    border-radius: 12px;
+  }
+
+  .location-input,
+  .restaurant-input {
+    font-size: 13px;
+  }
+
+  .location-icon {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  .search-icon {
+    font-size: 16px;
+  }
+
+  /* Promotional Images */
+
+  .homeimage {
+    display: flex;
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    gap: 12px;
+    padding: 12px 14px;
+
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .homeimage::-webkit-scrollbar {
+    display: none;
+  }
+
+  .homeimage a {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
+
+  .homeimage img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+  }
+
+  .instamart,
+  .dineout,
+  .food_delivery {
+    width: 100%;
+    height: 190px;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .image_logo img {
+    width: 95px;
+  }
+
+  .hero_section h1 {
+    font-size: 22px;
+  }
+
+  .nav_links {
+    gap: 10px;
+  }
+
+  .nav_links a {
+    font-size: 11px;
+  }
+
+  .homeimage img {
+    height: 165px;
+  }
+
+}
+

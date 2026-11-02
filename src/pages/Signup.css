@@ -1,0 +1,112 @@
+.signup-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.55);
+backdrop-filter: blur(5px);
+z-index: 9999;
+display: flex;
+justify-content: flex-end;
+}
+
+.signup-sidebar {
+width: 450px;
+max-width: 90%;
+height: 100%;
+background: white;
+position: relative;
+overflow-y: auto;
+animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+from {
+transform: translateX(100%);
+}
+
+to {
+transform: translateX(0);
+}
+}
+
+.close-btn {
+position: absolute;
+top: 20px;
+left: 25px;
+border: none;
+background: transparent;
+font-size: 35px;
+cursor: pointer;
+color: #555;
+}
+
+.signup-content {
+width: 80%;
+margin: 100px auto 30px;
+}
+
+.signup-content h2 {
+font-size: 30px;
+font-weight: 700;
+margin-bottom: 5px;
+}
+
+.signup-content p {
+color: #686b78;
+font-size: 14px;
+margin-bottom: 35px;
+}
+
+.signup-content a {
+color: #ff5200;
+text-decoration: none;
+}
+
+.signup-image {
+margin-bottom: 25px;
+}
+
+.signup-image img {
+width: 100px;
+}
+
+.signup-content input {
+width: 100%;
+height: 55px;
+padding: 15px;
+margin-bottom: 15px;
+border: 1px solid #d4d5d9;
+box-sizing: border-box;
+outline: none;
+font-size: 15px;
+}
+
+.signup-content input:focus {
+border-color: #ff5200;
+}
+
+.continue-btn {
+width: 100%;
+height: 50px;
+background: #ff5200;
+color: white;
+border: none;
+font-weight: bold;
+cursor: pointer;
+margin-bottom: 20px;
+}
+
+.signup-content small {
+font-size: 11px;
+color: #686b78;
+line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+.signup-sidebar {
+width: 100%;
+max-width: 100%;
+}
+}

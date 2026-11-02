@@ -1,0 +1,142 @@
+
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+}
+
+/* Login Panel */
+.login-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  max-width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow-y: auto;
+  box-sizing: border-box;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+  animation: slidePanel 0.25s ease-out;
+}
+
+@keyframes slidePanel {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Close Button */
+.login-close-btn {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #222;
+  cursor: pointer;
+}
+
+/* Login Content */
+.login-content {
+  width: 420px;
+  max-width: calc(100% - 48px);
+  margin: 100px auto 30px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.login-content h1 {
+  font-size: 36px;
+  color: #111;
+  margin: 0 0 12px;
+}
+
+/* Subtitle */
+.login-subtitle {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.login-subtitle a {
+  color: #ff5200;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Login Form */
+.login-form {
+  margin-top: 50px;
+}
+
+/* Phone Input */
+.login-form input {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.login-form input:focus {
+  border-color: #ff5200;
+}
+
+/* Login Button */
+.login-submit-btn {
+  width: 100%;
+  height: 56px;
+  margin-top: 20px;
+  border: none;
+  background-color: #ff5200;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.login-submit-btn:hover {
+  background-color: #e84900;
+}
+
+/* Terms */
+.login-terms {
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+  margin-top: 15px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 520px) {
+  .login-panel {
+    width: 100%;
+  }
+
+  .login-content {
+    margin: 80px auto 24px;
+  }
+
+  .login-close-btn {
+    top: 18px;
+    left: 20px;
+  }
+
+  .login-content h1 {
+    font-size: 28px;
+  }
+}
