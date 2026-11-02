@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Pothichor.css";
-import swiggy from "../assets/swiggy.png";
+import swiggy from "../assets/Swiggy.png";
 import PothichorImage from "../assets/Pothichor.png";
 import Empire_plaza from "../assets/Empire_plaza.png";
-import Dhevakeeyam_Ootusala from '../assets/Dhevakeeyam_Ootusala.png';
+import Dhevakeeyam_Ootusala from '../assets/Dhevakeeyam_ootusala.png';
 import Manna_restaurant from "../assets/Manna_restaurant.png";
 import Shap_food_restaurant from "../assets/Shap_food_restaurant.png";
 import Chillies from "../assets/Chillies.png";

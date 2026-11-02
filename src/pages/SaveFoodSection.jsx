@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./SaveFoodSection.css";
 
 import biryaniImg from "../assets/Biryani.png";
-import pizzaImg from "../assets/pizza.png";
+import pizzaImg from "../assets/Pizza.png";
 import mealsImg from "../assets/EnteMeal.png";
-import cakeImg from "../assets/cake.png";
+import cakeImg from "../assets/Cake.png";
 
 const HOME_SURPLUS_ITEMS = [
   {
