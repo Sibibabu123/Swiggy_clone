@@ -1,4 +1,4 @@
-/* Container and layout matching Swiggy */
+
 .categories-wrapper {
   width: 100%;
   background: #ffffff;
@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-/* Header with Title and Circle Navigation Arrows */
+
 .category-header {
   display: flex;
   justify-content: space-between;
@@ -133,7 +133,7 @@
   white-space: nowrap;
 }
 
-/* Divider line before restaurants section as seen in Swiggy screenshot */
+
 .category-divider {
   width: 100%;
   max-width: 1200px;
@@ -141,7 +141,7 @@
   border-bottom: 1px solid #f0f0f5;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
   .category-grid-2rows {
     grid-auto-columns: 140px;

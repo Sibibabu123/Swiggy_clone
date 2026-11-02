@@ -1,4 +1,4 @@
-/* Swiggy Pixel-Perfect Footer Styles matching user screenshot */
+
 
 .swiggy-footer {
   width: 100%;
@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-/* Upper 5-column content area */
+
 .footer-top-container {
   max-width: 1180px;
   margin: 0 auto;
@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 
-/* Brand Section */
+
 .footer-brand-section {
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
   margin-bottom: 12px;
 }
 
-/* Cities button with dropdown pill */
+
 .footer-cities-btn {
   display: inline-flex;
   align-items: center;
@@ -183,7 +183,7 @@
   align-items: center;
 }
 
-/* Download Badges matching exact Swiggy App Store & Play Store black pill buttons */
+
 .app-badge-btn {
   display: inline-flex;
   align-items: center;
@@ -229,7 +229,7 @@
   letter-spacing: -0.2px;
 }
 
-/* Responsive queries */
+
 @media (max-width: 1024px) {
   .footer-top-container {
     grid-template-columns: repeat(3, 1fr);

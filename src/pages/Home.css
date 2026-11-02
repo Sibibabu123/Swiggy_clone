@@ -53,7 +53,7 @@ body {
   display: block;
 }
 
-/* Navigation Links */
+
 
 .nav_links {
   display: flex;
@@ -76,7 +76,7 @@ body {
   opacity: 0.8;
 }
 
-/* Save Food Button */
+
 
 .save-food-link {
   display: inline-flex !important;
@@ -98,7 +98,18 @@ body {
   color: #1b5e20 !important;
   transform: translateY(-2px);
 }
-
+.image_get{
+    background-color: white;
+}
+.cities-section{
+  background-color: white;
+  margin-bottom: 0;
+  padding-bottom: 40px;}
+.swiggy-footer{
+background-color: white;
+  margin-top:-200px;
+   position: relative;
+}
 .save-leaf {
   font-size: 16px;
 }
@@ -433,9 +444,7 @@ body {
     height: 54px;
   }
 
-  /* Promotional Images */
-
-  .homeimage {
+.homeimage {
     gap: 12px;
     padding: 15px;
   }

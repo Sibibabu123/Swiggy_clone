@@ -148,7 +148,7 @@ function Partner() {
           </div>
 
 
-          {/* REGISTRATION FORM */}
+          
 
           <div className="registration-card">
 
@@ -278,7 +278,7 @@ function Partner() {
       </section>
 
 
-      {/* NAVIGATION TABS */}
+      
 
       <div className="partner-tabs">
 
@@ -297,11 +297,11 @@ function Partner() {
       </div>
 
 
-      {/* INFORMATION SECTION */}
+      
 
       <section className="partner-information">
 
-        {/* LEFT SECTION */}
+        
 
         <div className="steps-section">
 
@@ -340,7 +340,7 @@ function Partner() {
         </div>
 
 
-        {/* RIGHT SECTION */}
+        
 
         <div className="documents-section">
 

@@ -27,9 +27,7 @@ import Idli from "../assets/Idli.png";
 
 function Foodcategories() {
   const scrollRef = useRef(null);
-
-  // Exact 2-row pairing matching Swiggy screenshots
-  const categories = [
+const categories = [
     { name: "", image: Pottichur, path: "/Pothichor" },
     { name: "", image: Desserts, path: "/desserts" },
     { name: "", image: Biriyani, path: "/biriyani" },
