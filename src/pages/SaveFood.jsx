@@ -6,10 +6,10 @@ import biryaniImg from "../assets/Biryani.png";
 import pizzaImg from "../assets/Pizza.png";
 import mealsImg from "../assets/EnteMeal.png";
 import pothichorImg from "../assets/Pothichor.png";
-import cakeImg from "../assets/cake.png";
+import cakeImg from "../assets/Cake.png";
 import burgerImg from "../assets/Burger.png";
 import arabicImg from "../assets/Arabickhana.png";
-import parottaImg from "../assets/parotta.png";
+import parottaImg from "../assets/Parotta.png";
 
 const INITIAL_SURPLUS_ITEMS = [
   {

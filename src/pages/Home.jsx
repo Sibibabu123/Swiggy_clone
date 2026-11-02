@@ -1,6 +1,6 @@
 import React from 'react';
-import './home.css';
-import swiggylogo from '../assets/logo.png';
+import './Home.css';
+import swiggylogo from '../assets/Logo.png';
 import { Link } from 'react-router-dom';
 import SaveFoodSection from './SaveFoodSection.jsx';
 import Foodcategories from './Foodcategories.jsx';

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
  
 import '../pages/Partner.css';
-import swiggyLogo from "../assets/logo.png";
+import swiggyLogo from "../assets/Logo.png";
 
 function Partner() {
 
