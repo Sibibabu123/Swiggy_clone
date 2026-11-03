@@ -8,7 +8,11 @@ import Restaurants from "./Restaurants";
 import Cities from '../pages/Cities.jsx';
 import New_image from './New_image';
 import Signup from "./Signup";
+import image20 from '../assets/orange_loc.png'
+import image21 from '../assets/search_icon.png'
 import { useState } from "react";
+import Login from "./Login";
+
 
 import Partner from '../pages/Partner.jsx';
 import Footer from '../pages/Footer.jsx';
@@ -20,6 +24,10 @@ import image3 from '../assets/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png';
 
 function Home() {
   const [showSignup, setShowSignup] = useState(false);
+const [showLocationPopup, setShowLocationPopup] = useState(false);
+const [showLogin, setShowLogin] = useState(false);
+
+
   return (
     <div className="home_page">
 
@@ -51,7 +59,10 @@ function Home() {
             </button>
           </Link>
 
-          <button onClick={() => setShowSignup(true)} className='sign-btn'>
+         <button
+  onClick={() => setShowSignup(true)}
+  className="sign-btn"
+>
   Sign Up
 </button>
 
@@ -70,23 +81,39 @@ function Home() {
   <img src={veg_bck} alt="" width='270px'className='veg_bck' />
  </div>
         
-        <div className="search-container">
-        
+       <div className="location-wrapper_1">
 
-          <div className="location-box">
+  <div
+    className="location-box"
+    onClick={() => setShowLocationPopup(!showLocationPopup)}
+  >
+    <img src={image20} alt="Location" />
 
-            <i className="bi bi-geo-alt-fill location-icon"></i>
-            
- 
-            <input
-              type="text"
-              placeholder="Enter your delivery location"
-              className="location-input"
-            />
+    <input
+      type="text"
+      placeholder="Enter your delivery location"
+      className="location-input"
+      onClick={() => setShowLocationPopup(true)}
+      readOnly
+    />
 
-            <i className="bi bi-chevron-down dropdown-icon"></i>
+    <span className="location-arrow">⌄</span>
+  </div>
 
-          </div>
+  {showLocationPopup && (
+    <div className="location-popup">
+
+      <button
+        className="current-location-btn"
+        onClick={() => setShowLocationPopup(false)}
+      >
+        <span className="current-location-icon">➤</span>
+        Use my current location
+      </button>
+
+    </div>
+  )}
+
 
           <div className="restaurant-search-box">
 
@@ -96,8 +123,7 @@ function Home() {
               className="restaurant-input"
             />
             
-
-            <i className="bi bi-search search-icon"></i>
+        <img src={image21} alt="" />
            
             
 
@@ -133,10 +159,29 @@ function Home() {
       <Footer/>
 
       
-     {showSignup && (
-  <Signup closeSignup={() => setShowSignup(false)} />
+   {/* Signup Sidebar */}
+
+{showSignup && (
+  <Signup
+    closeSignup={() => setShowSignup(false)}
+    openLogin={() => {
+      setShowSignup(false);
+      setShowLogin(true);
+    }}
+  />
 )}
-      
+
+{/* Login Sidebar */}
+
+{showLogin && (
+  <Login
+    closeLogin={() => setShowLogin(false)}
+    openSignup={() => {
+      setShowLogin(false);
+      setShowSignup(true);
+    }}
+  />
+)} 
       
        
     </div>

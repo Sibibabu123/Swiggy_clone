@@ -224,7 +224,7 @@ function SaveFood() {
     localStorage.setItem("swiggy_saveeat_impact", JSON.stringify(impactStats));
   }, [impactStats]);
 
-  // Toast notification helper
+  
   const showToast = (msg) => {
     setToastMessage(msg);
     setTimeout(() => {
@@ -232,7 +232,7 @@ function SaveFood() {
     }, 3200);
   };
 
-  // Format seconds into "MMm SSs"
+ 
   const formatTime = (totalSeconds) => {
     if (!totalSeconds || totalSeconds <= 0) return "Expired";
     const minutes = Math.floor(totalSeconds / 60);
@@ -240,21 +240,21 @@ function SaveFood() {
     return `${minutes}m ${seconds < 10 ? "0" : ""}${seconds}s`;
   };
 
-  // Add item to cart
+  
   const handleAddToCart = (item) => {
     if (item.quantity <= 0) {
       showToast("Sorry, this surplus deal is out of stock!");
       return;
     }
 
-    // Decrement quantity in marketplace
+   
     setFoodItems((prev) =>
       prev.map((i) =>
         i.id === item.id ? { ...i, quantity: i.quantity - 1 } : i
       )
     );
 
-    // Update cart
+   
     setCart((prev) => {
       const existing = prev.find((c) => c.id === item.id);
       if (existing) {
@@ -269,9 +269,8 @@ function SaveFood() {
     showToast(`Added "${item.name}" to cart! You saved ₹${item.originalPrice - item.offerPrice}!`);
   };
 
-  // Remove / Decrement item in cart
   const handleRemoveFromCart = (item) => {
-    // Restore quantity in marketplace
+   
     setFoodItems((prev) =>
       prev.map((i) =>
         i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
@@ -291,7 +290,7 @@ function SaveFood() {
     });
   };
 
-  // Checkout action
+  
   const handleCheckout = () => {
     if (cart.length === 0) return;
 
@@ -301,7 +300,7 @@ function SaveFood() {
       0
     );
 
-    // Update impact stats
+   
     setImpactStats((prev) => ({
       mealsSaved: prev.mealsSaved + totalRescued,
       foodKgSaved: prev.foodKgSaved + totalRescued * 0.45,
@@ -313,7 +312,7 @@ function SaveFood() {
     showToast("🎉 Order placed! You rescued " + totalRescued + " meals & saved ₹" + totalMoneySaved + "!");
   };
 
-  // Filter food items
+  
   const filteredItems = foodItems.filter((item) => {
     const matchesCategory =
       selectedCategory === "All" || item.category === selectedCategory;
@@ -330,14 +329,14 @@ function SaveFood() {
 
   return (
     <div className="savefood-page">
-      {/* Toast Notification */}
+      
       {toastMessage && (
         <div className="savefood-toast">
           {toastMessage}
         </div>
       )}
 
-      {/* Header / Navbar */}
+      
       <header className="savefood-navbar">
         <div className="savefood-nav-left">
           <Link to="/" className="nav-logo">
@@ -354,7 +353,7 @@ function SaveFood() {
             ← Back to Swiggy Home
           </Link>
 
-          {/* Cart Icon */}
+          
           <button
             className="cart-trigger-btn"
             onClick={() => setIsCartOpen(true)}
@@ -365,7 +364,7 @@ function SaveFood() {
         </nav>
       </header>
 
-      {/* Hero Banner */}
+     
       <section className="savefood-hero">
         <div className="hero-content">
           <div className="hero-badge">🌱 SWIGGY SAVEEAT INITIATIVE</div>
@@ -381,7 +380,7 @@ function SaveFood() {
           </div>
         </div>
 
-        {/* Real-time Impact Cards */}
+       
         <div className="hero-impact-strip">
           <div className="impact-card">
             <div className="impact-icon">🍱</div>
@@ -406,7 +405,7 @@ function SaveFood() {
         </div>
       </section>
 
-      {/* Main Content Area - Marketplace */}
+      
       <main className="savefood-main">
         <section className="marketplace-section">
           <div className="section-toolbar">
@@ -417,7 +416,7 @@ function SaveFood() {
               </p>
             </div>
 
-            {/* Search Bar */}
+            
             <div className="surplus-search-box">
               <input
                 type="text"
@@ -428,7 +427,7 @@ function SaveFood() {
             </div>
           </div>
 
-          {/* Category Filter Pills */}
+          
           <div className="category-filter-bar">
             {["All", "Biryani", "Meals", "Pizza", "Fast Food", "Bakery"].map(
               (cat) => (
@@ -443,7 +442,7 @@ function SaveFood() {
             )}
           </div>
 
-          {/* Surplus Cards Grid */}
+         
           <div className="surplus-grid">
             {filteredItems.map((item) => {
               const timeLeft = countdowns[item.id] || 0;
@@ -459,13 +458,12 @@ function SaveFood() {
                   key={item.id}
                   className={`surplus-card ${isExpired || isOutOfStock ? "dimmed" : ""}`}
                 >
-                  {/* Card Image Banner */}
+                 
                   <div className="card-image-wrap">
                     <img src={item.image} alt={item.name} />
                     <span className="discount-tag">{discountPct}% OFF</span>
                     {item.badge && <span className="custom-badge">{item.badge}</span>}
 
-                    {/* Veg / Non-Veg Indicator */}
                     <span
                       className={`veg-indicator ${item.isVeg ? "veg" : "non-veg"}`}
                       title={item.isVeg ? "Pure Veg" : "Non Veg"}
@@ -474,7 +472,7 @@ function SaveFood() {
                     </span>
                   </div>
 
-                  {/* Card Body */}
+                  
                   <div className="card-body">
                     <div className="card-header">
                       <div>
@@ -485,7 +483,6 @@ function SaveFood() {
                       </div>
                     </div>
 
-                    {/* Pricing Row */}
                     <div className="price-row">
                       <div className="prices">
                         <span className="offer-price">₹{item.offerPrice}</span>
@@ -496,7 +493,7 @@ function SaveFood() {
                       </div>
                     </div>
 
-                    {/* Stock & Expiry Row */}
+                   
                     <div className="status-row">
                       <div className={`stock-badge ${item.quantity <= 3 ? "urgent" : ""}`}>
                         {isOutOfStock ? "Out of Stock" : `Only ${item.quantity} left`}
@@ -507,7 +504,7 @@ function SaveFood() {
                       </div>
                     </div>
 
-                    {/* Add to Cart Action */}
+                   
                     <div className="card-footer">
                       <button
                         className="add-cart-btn"
@@ -544,12 +541,12 @@ function SaveFood() {
         </section>
       </main>
 
-      {/* Cart Drawer */}
+     
       {isCartOpen && (
         <div className="cart-drawer-overlay" onClick={() => setIsCartOpen(false)}>
           <div className="cart-drawer" onClick={(e) => e.stopPropagation()}>
             <div className="drawer-header">
-              <h3>🛒 Your Surplus Food Cart</h3>
+              <h3> Your Surplus Food Cart</h3>
               <button
                 className="close-drawer-btn"
                 onClick={() => setIsCartOpen(false)}
@@ -615,10 +612,10 @@ function SaveFood() {
         </div>
       )}
 
-      {/* Footer */}
+     
       <footer className="savefood-footer">
         <p>
-          Swiggy Clone • <strong>SaveEat (Food Waste Reduction Feature)</strong> 
+          <strong>SaveEat (Food Waste Reduction Feature)</strong> 
         </p>
       </footer>
     </div>

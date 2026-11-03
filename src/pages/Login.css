@@ -9,6 +9,119 @@
   /* backdrop-filter: blur(2px); */
   z-index: 1000;
 }
+.login-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: flex-end;
+
+  z-index: 9999;
+}
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  /* Background blur */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  display: flex;
+  justify-content: flex-end;
+
+  z-index: 9999;
+}
+
+/* Login sidebar */
+
+.login-panel {
+  width: 450px;
+  max-width: 90%;
+  height: 100vh;
+
+  background-color: white;
+
+  position: relative;
+  z-index: 10000;
+
+  overflow-y: auto;
+
+  animation: slideLogin 0.4s ease;
+}
+.auth-link {
+  border: none;
+  background: transparent;
+  color: #ff5200;
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}/* Background overlay for Login and Signup */
+
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.30);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: flex-end;
+
+  z-index: 9999;
+}
+
+/* Login sidebar */
+
+.login-panel {
+  width: 465px;
+  max-width: 90%;
+  height: 100vh;
+
+  background: #ffffff;
+
+  position: relative;
+
+  overflow-y: auto;
+
+  animation: slideLogin 0.4s ease;
+}
+
+@keyframes slideLogin {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* Background blur */
+
 
 
 .login-panel {

@@ -56,6 +56,89 @@
   transition: border-color 0.2s, background 0.2s;
   text-decoration: none;
 }
+.cities-section {
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.cities-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #02060c;
+}
+
+/* Grid layout */
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Individual city links */
+
+.city-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 55px;
+  padding: 12px 10px;
+
+  border: 1px solid #d3d5d9;
+  border-radius: 12px;
+
+  background-color: white;
+
+  color: #414449;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.city-button a{
+  text-decoration: none;
+  color: #02060c;
+}
+
+
+.city-button:hover {
+  border-color: #ff5200;
+  color: #ff5200;
+  background-color: #fff7f2;
+  transform: translateY(-3px);
+}
+
+/* Show More button */
+
+.show-more-button {
+  font-size: 15px;
+  color: #ff5200;
+  border: 1px solid #ff5200;
+  background: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .cities-section {
+    padding: 25px 20px;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cities-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .city-button:hover {
   border-color: #b5b5b5;

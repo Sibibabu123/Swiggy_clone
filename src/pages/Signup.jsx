@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "./Signup.css";
 import logimage from'../assets/logimage.png';
 
-function Signup({ closeSignup }) {
+function Signup({ closeSignup, openLogin }) {
 
   return (
-    <div className="signup-overlay" onClick={closeSignup}>
+   <div className="auth-overlay" onClick={closeSignup}>
 
       <div
         className="signup-sidebar"
@@ -25,9 +25,12 @@ function Signup({ closeSignup }) {
 
           <h2>Sign up</h2>
 
-          <p>
-            or <Link to="/Login">login to your account</Link>
-          </p>
+       <p>
+  or{" "}
+  <button className="auth-link" onClick={openLogin}>
+    login to your account
+  </button>
+</p>
 
           <div className="signup-image">
             <img src={logimage} alt="Signup" />

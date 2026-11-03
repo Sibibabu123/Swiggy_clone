@@ -11,12 +11,28 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 9999;
-
+border: 1px solid black;
   display: flex;
   justify-content: flex-end;
 
   animation: fadeIn 0.3s ease;
 }
+.auth-link {
+  border: none;
+  background: transparent;
+  color: #ff5200;
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Background blur */
+
+
 
 
 

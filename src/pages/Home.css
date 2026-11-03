@@ -38,7 +38,7 @@ body {
   gap: 20px;
 }
 
-/* Logo */
+
 
 .image_logo {
   display: flex;
@@ -122,7 +122,7 @@ background-color: white;
   border-radius: 10px;
 }
 
-/* Get App Button */
+
 
 .app-btn {
   background: transparent;
@@ -331,6 +331,62 @@ background-color: white;
 .homeimage img:hover {
   transform: translateY(-5px);
 }
+.location-wrapper_1{
+  display: flex;
+  margin-top: -250px;
+  gap: 30px;
+}
+
+.location-arrow {
+  font-size: 25px;
+  color: #333;
+  margin-left: 8px;
+}
+
+/* Location popup */
+
+.location-popup {
+  position: absolute;
+  top: 450px;
+  left: 100;
+
+  width: 950px;
+  min-height: 80px;
+
+  background-color: white;
+  border-radius: 15px;
+
+  padding: 20px 25px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+  z-index: 1000;
+}
+
+/* Current location button */
+
+.current-location-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border: none;
+  background: transparent;
+
+  color: #ff5200;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.current-location-btn:hover {
+  color: #e84900;
+}
+
+.current-location-icon {
+  font-size: 20px;
+}
 
 /* Individual image classes */
 
@@ -430,7 +486,7 @@ background-color: white;
     font-size: 13px;
   }
 
-  /* Hero Section */
+ 
 
   .hero_section {
     width: 100%;
@@ -443,7 +499,7 @@ background-color: white;
     line-height: 1.3;
   }
 
-  /* Search Section */
+ 
 
   .search-container {
     width: 100%;
@@ -460,7 +516,7 @@ background-color: white;
     height: 52px;
   }
 
-  /* Background Images */
+  
 
   .veg_bck,
   .veg_bck_2 {

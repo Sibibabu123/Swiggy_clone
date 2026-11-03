@@ -5,7 +5,7 @@ import Swiggy from "../assets/Swiggy.png";
 
 function Footer() {
   return (
-    <Footer className="Swiggy-footer">
+    <footer className="Swiggy-footer">
       <div className="footer-top-container">
        <div className="footer-brand-section">
           <Link to="/" className="footer-logo-wrapper">
@@ -108,7 +108,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </Footer>
+    </footer>
   );
 }
 

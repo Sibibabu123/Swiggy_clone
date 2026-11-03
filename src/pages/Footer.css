@@ -11,10 +11,13 @@
 
 
 .footer-top-container {
-  max-width: 1180px;
+ 
+   background-color: #f0f0f5;
   margin: 0 auto;
   padding: 48px 24px 40px 24px;
   display: grid;
+  width: 100%;
+  
   grid-template-columns: 220px 170px 170px 170px 1fr;
   column-gap: 24px;
   row-gap: 32px;
@@ -25,7 +28,9 @@
 .footer-brand-section {
   display: flex;
   flex-direction: column;
+  background-color: #f0f0f5;
   align-items: flex-start;
+  width: 100%;
 }
 
 .footer-logo-wrapper {
@@ -120,7 +125,10 @@
 .footer-social-group {
   margin-top: 36px;
 }
-
+.footer-social-icons{
+  text-decoration: none;
+  color: #000000;
+}
 .footer-social-group .footer-col-title {
   margin-bottom: 14px;
 }
@@ -155,6 +163,7 @@
 /* Bottom App Download Bar */
 .footer-bottom-bar {
   width: 100%;
+  background-color: #f0f0f5;
   padding: 24px 20px;
   box-sizing: border-box;
 }
