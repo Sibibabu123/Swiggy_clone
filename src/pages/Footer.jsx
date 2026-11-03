@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import swiggy from "../assets/swiggy.png";
+import Swiggy from "../assets/Swiggy.png";
 
 function Footer() {
   return (
-    <footer className="swiggy-footer">
+    <footer className="Swiggy-footer">
       <div className="footer-top-container">
        <div className="footer-brand-section">
           <Link to="/" className="footer-logo-wrapper">
-            <img src={swiggy} alt="" className="footer-swiggy-logo" />
+            <img src={Swiggy} alt="" className="footer-swiggy-logo" />
           </Link>
           <p className="footer-copyright">© 2026 Swiggy Limited</p>
         </div><div className="footer-links-col">
