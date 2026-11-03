@@ -1,5 +1,4 @@
 import React from "react";
-import FoodCategories from "./Foodcategories.jsx";
 import Biriyani from "../assets/Biriyani.png";
 import Biriyani1 from "../assets/Biriyani1.png";
 import Biriyani2 from "../assets/Biriyani2.png";
@@ -11,7 +10,7 @@ const biryaniRestaurants = [
   {
     id: 1,
     name: "Shalimar Biriyani",
-    image: Biriyani,
+    image: Biriyani1,
     rating: "4.5",
     time: "20–25 mins",
     food: "Thalassery Biryani, Malabar, Chicken Biryani",
@@ -145,7 +144,7 @@ function Shawarma() {
 
         <div className="restaurant-grid">
 
-          {restaurants.map((restaurant) => (
+          {biryaniRestaurants.map((restaurant) => (
 
             <div className="restaurant-card" key={restaurant.id}>
 
@@ -177,6 +176,7 @@ function Shawarma() {
                 <p>{restaurant.food}</p>
 
                 <p>{restaurant.location}</p>
+                
 
               </div>
 
@@ -192,4 +192,4 @@ function Shawarma() {
   );
 }
 
-export default Biriyani;
+export default Shawarma;

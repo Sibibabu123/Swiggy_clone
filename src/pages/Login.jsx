@@ -8,10 +8,10 @@ import logimage from '../assets/logimage.png'
 function Login() {
     
     return (
-        <div className="login-overlay">
+        <div className="login-overlay"onClick={(e) => e.stopPropagation()}>
+
 
             <div className="login-panel">
-
              
                 <Link to='/'> <button className="login-close-btn">
                     ×

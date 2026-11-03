@@ -54,6 +54,7 @@
 
   cursor: pointer;
   transition: border-color 0.2s, background 0.2s;
+  text-decoration: none;
 }
 
 .city-button:hover {
@@ -123,6 +124,7 @@
   .city-button {
     height: 48px;
     font-size: 13px;
+    text-decoration: none;
   }
 }
 
